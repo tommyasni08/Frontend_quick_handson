@@ -1,5 +1,7 @@
 # Login Page V2
 
+    Single column
+
 ## References
 
 Referencing [source](https://www.youtube.com/watch?v=pSeDQade5yI&list=WL&index=12)
