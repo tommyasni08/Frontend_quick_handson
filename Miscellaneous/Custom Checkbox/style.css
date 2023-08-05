@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 40px;
+  background-image: url("images/sunrise.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0, 0.8);
+  transition: background-image 0.2s;
+}
+
+.inner .toggle {
+  position: relative;
+  top: 2px;
+  left: 3px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #eeeeee;
+  animation: animate 0.5s linear;
+}
+
+.inner .toggle::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  background: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+}
+
+@keyframes animate {
+  0% {
+    left: 51px;
+  }
+  60% {
+    left: 1px;
+  }
+  100% {
+    left: 3px;
+  }
+}
+
+.inner.active .toggle {
+  left: 51px;
+  animation: animate2 0.5s linear;
+}
+
+@keyframes animate2 {
+  0% {
+    left: 3px;
+  }
+  60% {
+    left: 53px;
+  }
+  100% {
+    left: 51px;
+  }
+}
+
+.inner.active {
+  background-image: url("images/sunset1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
