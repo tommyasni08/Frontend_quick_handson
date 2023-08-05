@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(to right, #0d2c29, black);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+svg {
+  height: 100px;
+  width: 100px;
+}
+
+svg > * {
+  stroke: none;
+}
