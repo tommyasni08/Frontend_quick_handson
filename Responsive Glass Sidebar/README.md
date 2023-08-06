@@ -1,4 +1,4 @@
-# Profile Card
+# Responsive Glass Sidebar
 
     Basic
 
